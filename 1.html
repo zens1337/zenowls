@@ -1,0 +1,657 @@
+
+
+<!doctype html>
+<html class="cb-bootstrap">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>User Login - Chargebee </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    
+    <!--[if IE]><link rel="shortcut icon" href='//css.chargebeestatic.com/static/app-static-assets/core/core-3.0.17/images/favicon.ico' /><![endif]-->
+    <link rel="icon" type="image/png" href='//css.chargebeestatic.com/static/app-static-assets/core/core-3.0.17/images/favicon.png' />    
+    <link rel='stylesheet' type='text/css' media='screen' href='//d2jxbtsa1l6d79.cloudfront.net/static/app-static-assets/tp/tp-3.0.0/stylesheets/tp_bootstrap.css'/>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='//css.chargebeestatic.com/static/app-static-assets/core/core-3.0.17/stylesheets/core_new_app.css'/>
+
+    
+
+<script  type="text/javascript"  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >
+  window.enable_jquery_3x_patch = true
+</script>
+    
+<script type='text/javascript' src='//dgkxwewtzsnml.cloudfront.net/static/app-static-assets/tp/tp-3.0.0/javascripts/tp_global.js'></script>
+
+<script type='text/javascript' src='//js.chargebeestatic.com/static/app-static-assets/core/core-3.0.17/javascripts/core_global.js'></script>
+
+
+<script  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >
+  window.cb_vue_ui_cdn_path = '//dgkxwewtzsnml.cloudfront.net/static/app-static-assets/cb-vue/cb-vue-2024.11.08-08.21/';
+</script>
+
+
+    <script type='text/javascript' src='//dgkxwewtzsnml.cloudfront.net/static/app-static-assets/cb-vue/cb-vue-2024.11.08-08.21/javascripts/billing-rules.js'></script>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='//dgkxwewtzsnml.cloudfront.net/static/app-static-assets/cb-vue/cb-vue-2024.11.08-08.21/stylesheets/billing-rules.css'/>
+
+
+
+<!-- bootstrap js -->
+<script type='text/javascript' src='//dgkxwewtzsnml.cloudfront.net/static/app-static-assets/tp/tp-3.0.0/javascripts/tp_bootstrap.js'></script>
+
+
+
+
+<script type='text/javascript' src='//dgkxwewtzsnml.cloudfront.net/static/app-static-assets/app/43.7.0_v3/javascripts/users.js'></script>
+
+
+
+
+
+
+
+<script  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >
+    (function($){
+    
+})(jQuery);
+</script>
+
+
+
+
+    
+    <meta name="robots" content="noindex, noarchive, noimageindex"/>
+
+    <script type='text/javascript' src='//dgkxwewtzsnml.cloudfront.net/static/app-static-assets/tp/tp-3.0.0/javascripts/tp_bootstrap.js'></script>
+
+    
+
+    
+
+    <script  type="text/javascript"  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-27953252-1', 'chargebee.com');
+      ga('send', 'pageview','\/login');
+    </script>
+    
+  
+
+
+    
+
+  
+
+    
+</head>
+ 
+    <body>
+        <script type='text/javascript' src='//dgkxwewtzsnml.cloudfront.net/static/app-static-assets/app/43.7.0_v3/javascripts/error_highlight.js'></script>
+
+        <noscript>
+<style>
+    body {
+        margin: 30px 0 0;
+    }
+    #_no_script_ {
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        padding: 7px;
+        background-color: #DD0E0E;
+        color: #FFFFFF; 
+        line-height:1.4;
+        text-align: center; 
+        z-index: 9999;
+        opacity: 0.8;
+        filter:alpha(opacity=80);
+        font-size: 12px;        
+    }
+</style>
+<div id="_no_script_">
+    Javascript has been disabled on your browser. Please enable it and refresh the page.
+</div>
+</noscript>
+
+        
+<div class="cb-status-flash cb-main-status">
+    
+    <p></p>
+    
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript' src='//dgkxwewtzsnml.cloudfront.net/static/app-static-assets/app/43.7.0_v3/javascripts/login.js'></script>
+
+
+
+
+
+
+
+<div class="cn-login">
+    <div class="cn-login__header">
+        <div class="cn-login__nav">
+            <div class="cn-login__brand">
+                <a href="/" class="cn-login__logo" tabindex="-1">
+                    <img src="//css.chargebeestatic.com/static/app-static-assets/core/core-3.0.17/images/brand/cn-logotype-black.svg" height="30">
+                </a>
+            </div>
+            
+            <div class="cn-login__signup">
+                <span class="cn-login__signup-text">Don't have an account?</span>
+                <a href="https://www.chargebee.com/trial-signup.html" class="cn-login__signup-btn" tabindex="-1">
+                    Sign up &rarr;
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="cn-login__content">
+    <div class="cn-login__block">
+        <div class="cn-login__left">
+            
+            <div class="cn-login__media">
+                <div class="cn-login__media-brand">
+                    <img src="//css.chargebeestatic.com/static/app-static-assets/core/core-3.0.17/images/brand/cn-logo-white.svg" height="28">
+                </div>
+                
+                    <div class="cn-login__media-label">NAVIGATING BUSINESS GROWTH IN 2024</div>
+                
+                <div class="cn-login__media-heading">
+                    <a href="https://www.chargebee.com/blog/chargebee-top-5-growth-metrics-economic-recovery-2024/" target="_blank">
+                        Top 5 Metrics You Can't Afford to Ignore in 2024
+                    </a>
+                </div>
+                <div class="cn-login__media-body">
+                    
+                            <a href="https://www.chargebee.com/blog/chargebee-top-5-growth-metrics-economic-recovery-2024/" target="_blank">
+                                <div class="cn-login__media-thumb" style="background-image:url('https://d190vb4jo83j4z.cloudfront.net/Top-5-metrics-to-track-2024-Chargebee.png'); background-size:120px 120px"></div>
+                            </a>
+                        
+                    
+                    <div class="cn-login__media-text">
+                        <div>
+                            Stay ahead in a dynamic economy. Feel overwhelmed by tons of subscription metrics? We've got your back. Discover the key reports to steer your business to success.
+                        </div>
+                        <div>
+                            <a href="https://www.chargebee.com/blog/chargebee-top-5-growth-metrics-economic-recovery-2024/" class="cn-login__media-link" target="_blank">
+                                Explore the Essential Metrics Now!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="cn-login__right cn-modules">
+            <div id="cb-user-login" class="clearfix" >
+                    <div class="cn-login__form-title">Sign in to Chargebee!</div>
+                    
+                <div  class="cb-form-container cn-login__form cn-form--lg" ><form  id="users_login_submit"  name="users_login_submit"  method="post"  action="/users/login_submit"  ajax="true"  ajaxEvent="handleForward"  autocomplete="on"  data-loading-text="Loading..."  validate="true" >
+                    <div class="cn-form__field">
+                        <input type="text" autofocus="true" name="email" id="email" value="" class="cn-form__control"
+                               placeholder="name@company.com" validate="true">
+                        <span id="email.err" name="email.err" class="cn-form__error"></span>
+                    </div>
+                    <div id="cb-alert-registration-fields">
+                        <div class="cn-form__field">
+                            <div class="cn-form__password cn-form__group">
+                                <input id="password" type="password" autocomplete="off" name="password" value="" class="cn-form__control"
+                                       placeholder="password" validate="true">
+                                <span id="cb-show-hide-pwd-link" class="cn-form__password-toggle">Show</span>
+                            </div>
+                            <span id="password.err" name="password.err" class="cn-form__error"></span>
+                        </div>
+                        <div class="cn-login__form-actions">
+                            <input type="submit" class="cn-btn cn-btn--raised cn-btn--brand cn-btn--lg" value="Sign in" id="sign-in-submit">
+                            <a class="cn-login__anchor" id="cb-forgot-pwd-link" tabindex="-1">Forgot password?</a>
+                        </div>
+                    </div>
+                    <input type ='hidden'  name="login_token"  value="rKrPdkADO4cdSzGcuSQTyS5SgQcuD8ecdZx2" />
+                    
+                    <input type ='hidden'  name="forward"  value="https://zenowls.chargebee.com/plans/new" />
+                    
+                    
+                    
+                    <input type="hidden" name="recaptcha_token" id="recaptcha_token"/>
+                </form> </div><script  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >var users_login_submit = {"validators":{"email":{"presence":{"message":"cannot be blank"},"email":{"message":" should be a valid email"},"is_account_registered":{"message":"account not yet registered"}},"password":{"presence":{"message":"cannot be blank"},"length":{"message":" should be between 8 and 56 characters","minimum":8,"maximum":56}},"login_token":{"presence":{"message":"cannot be blank"},"length":{"message":" should not have more than 70 characters","maximum":70}},"recaptcha_token":{"allow_blank":true,"length":{"message":" should not have more than 2000 characters","maximum":2000}},"set_skip_site_valid":{"allow_blank":true},"forward":{"allow_blank":true,"length":{"message":" should not have more than 2000 characters","maximum":2000}}},"strategy":"onsubmit","stripEmptyParams":false};</script>
+                    
+                <div class="cn-login__mail clearfix" id="cb-alert-registration" style="display:none">
+                    <div class="cn-login__mail-thumb">
+                        <span class="cn-login__mail-verify"></span>
+                    </div>
+                    <div class="cn-login__mail-content">
+                        Hey! Looks like you haven't completed your account setup. We have sent you an email with instructions.
+                        <div>
+                            <div  class="cb-form-container"  style="display:inline-block;" ><form  id="users_resend_registration_unauth"  name="users_resend_registration_unauth"  method="post"  action="/users/resend_registration_unauth"  ajax="true"  ajaxEvent="formhandler"  autocomplete="on"  data-loading-text="Loading..."  validate="true" >
+                                <input type ='hidden'  name="email"  value="" />
+                                <input type="hidden" name="recaptcha_resend_verify_token" id="recaptcha_resend_verify_token"/>
+                                <a id="cb-alert-resend-mail" tabindex="-1">Resend Email</a>
+                            </form> </div><script  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >var users_resend_registration_unauth = {"validators":{"email":{"presence":{"message":"cannot be blank"},"email":{"message":" should be a valid email"}},"recaptcha_resend_verify_token":{"allow_blank":true,"length":{"message":" should not have more than 2000 characters","maximum":2000}}},"strategy":"onsubmit","stripEmptyParams":false};</script>
+                        </div>
+                    </div>
+                </div>
+                <div class="cn-login__oauth">
+                    <div class="cn-login__divider">
+                        <span class="cn-login__divider-text">or</span>
+                    </div>
+                    <div  class="cb-form-container" ><form  id="users_google_sign_in"  name="users_google_sign_in"  method="post"  action="/users/google_sign_in"  ajax="true"  ajaxEvent="frwdHandle"  autocomplete="on"  data-loading-text="Loading..."  validate="true" >
+                        
+                            
+                                
+                                <div class="g_id_signin"
+                                     data-type="standard"
+                                     data-shape="rectangular"
+                                     data-theme="filled_blue"
+                                     data-text="signin_with"
+                                     data-size="large"
+                                     data-width="275"
+                                     data-logo_alignment="left"
+                                     id="google-signin">
+                                </div>
+                            
+                        
+                        <input type="hidden" name="id_token" value=""/>
+                        <input type ='hidden'  name="login_token"  value="rKrPdkADO4cdSzGcuSQTyS5SgQcuD8ecdZx2" />
+                        
+                        <input type ='hidden'  name="forward"  value="https://zenowls.chargebee.com/plans/new" />
+                        
+                        
+                        
+                    </form> </div><script  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >var users_google_sign_in = {"validators":{"id_token":{"presence":{"message":"cannot be blank"},"length":{"message":" should not have more than 2000 characters","maximum":2000}},"login_token":{"presence":{"message":"cannot be blank"},"length":{"message":" should not have more than 70 characters","maximum":70}},"forward":{"allow_blank":true,"length":{"message":" should not have more than 1000 characters","maximum":1000}}},"strategy":"onsubmit","stripEmptyParams":false};</script>
+                    <input type="hidden" name="google_email" id="google_email"/>
+                    <div id="google_email.err" name="google_email.err" class="cn-form__error"></div>
+                </div>
+                <div class="cn-mar--t-sm cn-ta--center">
+                    <a id="cb-sso-login-link">Sign in with Single Sign-On</a>
+                </div>
+            </div>
+            <div id="cb-forgot-password" style="display:none;">
+                <div  class="cb-form-container cn-form--lg" ><form  id="forgot_passwords_email_submit"  name="forgot_passwords_email_submit"  method="post"  action="/forgot_passwords/email_submit"  ajax="true"  ajaxEvent="forgotPwdHandler"  autocomplete="on"  data-loading-text="Loading..."  validate="true" >
+                    <div class="cn-form__field">
+                        <label  class="cn-form__label">Your registered email address</label>
+                        <input type="text" name="email" id="email" value="" class="cn-form__control" placeholder="name@company.com" validate="true" value="" autofocus="true">
+                        <span id="email.err" name="email.err" class="cn-form__error"></span>
+                    </div>
+                    <div class="cn-form__field">
+                        <input type="submit" class="cn-btn cn-btn--lg cn-btn--raised cn-btn--primary" value="Send reset link" id="cb-forgot-pwd-link-submit">
+                    </div>
+                    <div class="cn-form__field cn-ta--center"><a id="back-from-forgot-pwd" class="cn-login__anchor">Back to login</a></div>
+                </form> </div><script  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >var forgot_passwords_email_submit = {"validators":{"email":{"presence":{"message":"cannot be blank"},"email":{"message":" should be a valid email"}}},"strategy":"onsubmit","stripEmptyParams":false};</script>
+            </div>
+            <div id="cb-sso-login" style="display:none;">
+                <div  class="cb-form-container cn-form--lg" ><form  id="saml_validate_login"  name="saml_validate_login"  method="get"  action="/saml/validate_login"  ajax="true"  ajaxEvent="samlLoginValidate"  autocomplete="on"  data-loading-text="Loading..."  validate="true" >
+                    <div class="cn-form__field">
+                        <label  class="cn-form__label">Domain name</label>
+                        <div  class="cn-form__group" >
+                            <input type="text" name="domain" id="domain" class="cn-form__control" placeholder="domain" validate="true" value="zenowls" autofocus="true">
+                            <span  class="cn-form__group-placeholder">.chargebee.com</span>
+                        </div>
+                        <span id="domain.err" name="domain.err" class="cn-form__error"></span>
+                    </div>
+                    <div class="cn-form__field">
+                        <input type="submit" class="cn-btn cn-btn--lg cn-btn--raised cn-btn--brand" value="Sign in" id="cb-sso-login-link-submit">
+                    </div>
+                    <div class="cn-form__field cn-ta--center"><a id="back-from-sso-login" class="cn-login__anchor">Go back to Chargebee Login page</a></div>
+                </form> </div><script  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >var saml_validate_login = {"validators":{"domain":{"presence":{"message":"cannot be blank"},"length":{"message":" should not have more than 100 characters","maximum":100}}},"strategy":"onsubmit","stripEmptyParams":false};</script>
+            </div>
+            <div style="display: none">
+                <div  class="cb-form-container cn-form--lg" ><form  id="saml_login"  name="saml_login"  method="get"  action="/saml/login"  ajax="false"  ajaxEvent="formhandler"  autocomplete="on"  data-loading-text="Loading..."  validate="true" >
+                    <input type="hidden" name="domain"/>
+                    
+                    <input type="hidden" name="forward" value="https://zenowls.chargebee.com/plans/new"/>
+                    
+                    
+                </form> </div><script  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >var saml_login = {"validators":{"domain":{"presence":{"message":"cannot be blank"},"length":{"message":" should not have more than 100 characters","maximum":100}},"forward":{"allow_blank":true,"length":{"message":" should not have more than 1000 characters","maximum":1000}},"token":{"allow_blank":true,"length":{"message":" should not have more than 70 characters","maximum":70}},"consent_accepted_saml":{"allow_blank":true}},"strategy":"onsubmit","stripEmptyParams":false};</script>
+            </div>
+            <div style="display: none">
+                <form action="" method="post" id="forward_form" >
+                    <input type="hidden" name="csrf_token" value=""/>
+                    <input type="hidden" name="domain" value=""/>
+                    <input type="hidden" name="session_id" value=""/>
+                    <input type="hidden" name="fwd_url" value=""/>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+        <div class="cn-login__region cn-mar--t-sm  cn-mar--b-st cn-ta--center">
+            &#127758 You are on our US data
+            hosting centre.
+            
+            Switch to our
+            
+            
+            <a href=https://app.eu.chargebee.com>EU
+            </a>
+            
+            
+            or
+            
+            <a href=https://app.au.chargebee.com>AU
+            </a>
+            
+            data hosting centre.
+            
+        </div>
+        
+    </div>
+</div>
+
+<script  src="https://accounts.google.com/gsi/client"  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" async defer ></script>
+
+
+    
+    <div id="g_id_onload"
+         data-client_id="462060136131-tprndcqia10kektfs3n8i70qt0t4p6vc.apps.googleusercontent.com"
+         data-context="signin"
+         data-ux_mode="popup"
+         data-callback="onSignInSuccess"
+         data-nonce=""
+         data-auto_prompt="false"
+         data-auto_select="false"
+         data-use_fedcm_for_prompt="true">
+    </div>
+
+
+
+
+<script>document.cookie = "G_AUTH2_MIGRATION=informational";</script>
+
+
+
+<div id="login-captcha-widget" class="g-recaptcha" data-sitekey="6LdwyWMUAAAAAH6znJkWVqv6M6--4V48B6HsfdAr" data-callback="gReCaptchaLoginCallBack" data-size="invisible"></div>
+<div id="resend-verify-captcha-widget" class="g-recaptcha" data-sitekey="6LdwyWMUAAAAAH6znJkWVqv6M6--4V48B6HsfdAr" data-callback="gReCaptchaResendVerifyCallBack" data-size="invisible"></div>
+
+<script  src="https://www.google.com/recaptcha/api.js?render=explicit&amp;onload=onloadRecaptchaCallback"  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" async defer ></script>
+<script  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >
+    var loginCaptcha;
+    var resendVerifyCaptcha;
+
+    $(document).ready(function() {
+        $('#sign-in-submit').click(function(event) {
+            event.preventDefault();
+            grecaptcha.reset(loginCaptcha);
+            grecaptcha.execute(loginCaptcha);
+        });
+
+        $("#cb-alert-resend-mail").click(function (e) {
+            grecaptcha.reset(resendVerifyCaptcha);
+            grecaptcha.execute(resendVerifyCaptcha);
+        });
+    });
+
+    function initCaptchaWidgets() {
+        loginCaptcha = grecaptcha.render('login-captcha-widget');
+        resendVerifyCaptcha = grecaptcha.render('resend-verify-captcha-widget');
+    }
+
+    function gReCaptchaLoginCallBack(token) {
+        $("#recaptcha_token").val(token);
+        $("#users_login_submit").submit();
+    }
+
+    function gReCaptchaResendVerifyCallBack(token) {
+        $('#recaptcha_resend_verify_token').val(token);
+        $("#users_resend_registration_unauth").submit();
+    }
+
+    function onloadRecaptchaCallback() {
+        initCaptchaWidgets();
+    }
+</script>
+
+<script  nonce="RUJkjo1IKPPXpiwhJimzi0e+J8Y=" >
+    
+
+    $('#edit_email_icon').click(function (e) {
+        $("#continue-email").trigger("element:validate:clear");
+        $("#password").trigger("element:validate:clear");
+        $("#email").trigger("element:validate:clear");
+
+        // Enable Buttons if they are disabled
+        $("#users_continue_login").find('input[type="submit"]').removeAttr("disabled");
+        $("#users_login_submit").find('input[type="submit"]').removeAttr("disabled");
+
+
+        $("#cb-alert-registration").hide();
+        $("#cb-alert-registration-fields").show();
+
+        $("#cb-login-old-flow").hide();
+        $("#cb-login-email-continue").show();
+
+        var inputField = document.getElementById('password');
+        inputField.value = inputField.defaultValue;
+        var userEmail = document.getElementById("continue-email");
+        userEmail.focus();
+    });
+
+    ajaxResponseHandlers["frwdHandle"] = {
+        success: function (responseJson, statusText, xhr, $form) {
+            createNewForm(responseJson);
+        }, error: function (jqXHR, textStatus, errorThrown) {
+            ajaxResponseHandlers.formhandler.error(jqXHR, textStatus, errorThrown);
+        }
+    }
+    ajaxResponseHandlers["handleForward"] = {
+        beforeSend: function (jqXHR, settings) {
+            $("#cb-alert-registration-fields").show();
+            settings["_form_"].find(":submit").addClass("cn-btn--spinner");
+        },
+        success: function (responseJson, statusText, xhr, $form) {
+            createNewForm(responseJson);
+        },
+        error: function (jqXHR) {
+            $(".cn-btn--spinner").removeClass("cn-btn--spinner");
+            var errorJSON = ajaxResponseHandlers.defhandler.parse(jqXHR.responseText);
+            var errMsg = "";
+            jQuery.each(errorJSON.errors, function (idx, errObj) {
+                if (errObj.param == null) {
+                    errMsg = flashMessage.getAsFlash("error", errObj.message);
+                }
+                if (errorJSON.error_info != undefined && errorJSON.error_info.data == "nopass") {
+                    $("#cb-alert-registration-fields").hide();
+                    $("#cb-alert-registration").show();
+                    $("#users_login_submit").find('input[type="submit"]').attr("disabled", "true");
+                }
+            });
+        }
+    };
+    ajaxResponseHandlers["samlLoginValidate"] ={
+        beforeSend: function (jqXHR, settings) {
+            $(jq('cb-sso-login-link-submit')).addClass('cn-btn--spinner');
+            ajaxResponseHandlers.defhandlerv2.beforeSend(jqXHR, settings);
+        },
+        success: function (responseJson, statusText, xhr, $form) {
+            $('#saml_login input[name="domain"]').attr('value', $('#saml_validate_login input[name="domain"]').val());
+            $("#saml_login").submit();
+        },
+        error: function(jqXHR, textStatus) {
+            $(jq('cb-sso-login-link-submit')).removeClass('cn-btn--spinner');
+            ajaxResponseHandlers.defhandlerv2.error(jqXHR, textStatus);
+        }
+    };
+
+    ajaxResponseHandlers["forgotPwdHandler"] ={
+        beforeSend: function (jqXHR, settings) {
+            $(jq('cb-forgot-pwd-link-submit')).addClass('cn-btn--spinner');
+            ajaxResponseHandlers.defhandlerv2.beforeSend(jqXHR, settings);
+        },
+        complete: function(jqXHR, textStatus) {
+            $(jq('cb-forgot-pwd-link-submit')).removeClass('cn-btn--spinner');
+            ajaxResponseHandlers.defhandlerv2.complete(jqXHR, textStatus);
+        }
+    };
+    //for csrf and switch domain
+    function createNewForm(responseJson) {
+        sessionTimeout.clearhandlerInterval();
+        if (typeof responseJson.url != 'undefined') {
+            $('#forward_form input[name="csrf_token"]').attr('value', responseJson.csrf_token);
+            $('#forward_form input[name="domain"]').attr('value', responseJson.domain);
+            $('#forward_form input[name="session_id"]').attr('value', responseJson.session_id);
+            $('#forward_form input[name="fwd_url"]').attr('value', responseJson.fwd_url);
+            $("#forward_form").attr('action', responseJson.url + "/sites/switch_domain");
+            $("#forward_form").submit();
+        } else {
+            window.location.replace(responseJson.forward);
+        }
+    }
+
+    //forgot password
+    $('#cb-forgot-pwd-link').click(function () {
+        var email = $("#cb-user-login").find("#email").val();
+        flashMessage.hide();
+        $('#forgot_passwords_email_submit').trigger('form:validate:clear');
+        $("#cb-user-login").hide();
+        $("#cb-forgot-password").find("#email").val(email);
+        $('#cb-forgot-password').show();
+    });
+
+    $('#cb-sso-login-link').click(function() {
+        flashMessage.hide();
+        $('#saml_validate_login').trigger('form:validate:clear');
+        $("#cb-user-login").hide();
+        $('#cb-sso-login').show();
+    });
+
+    $('#back-from-forgot-pwd').click(function () {
+        $(this).parents("#cb-forgot-password").hide();
+        flashMessage.hide();
+        $('#users_login_submit').trigger('form:validate:clear');
+        $("#cb-user-login").show();
+    });
+
+    $('#back-from-sso-login').click(function () {
+        $(this).parents("#cb-sso-login").hide();
+        flashMessage.hide();
+        $('#users_login_submit').trigger('form:validate:clear');
+        $("#cb-user-login").show();
+    });
+
+    $("#cb-alert-resend-mail").click(function (e) {
+        var emailTo = $("#users_resend_registration_unauth input[name='email']");
+        var emailFrom = $("#users_login_submit input[id='email']");
+        if (emailFrom.length === 0) {
+            return false;
+        }
+        emailTo.val($(emailFrom).val());
+        
+    });
+
+    // On focus out of email element,
+    // remote validation should be called to know about whether account is registered or not .
+    $("#email").focusout(function (e) {
+        var settings = window[$("#users_login_submit").attr('id')]; //fetching all validators in form
+        var emailValidators = settings.validators[$(this).attr("name")]; //fetching only validators for email object
+        for (var r in emailValidators) {
+            if (formValidation.validators.remote[r]) {
+                //if any local validation fails, it wont send remote request. We just neglect it.
+                formValidation.validators.remote[r]($(this), emailValidators[r]);
+            }
+        }
+    });
+
+    /**
+     * On Focus out of email Element in continue step
+     * remote validation should be called to validate whether account is registered or not
+     *
+     */
+    $("#continue-email").focusout(function (e) {
+
+        var settings = window[$("#users_continue_login").attr('id')];
+        var emailValidators = settings.validators[$(this).attr("name")];
+        for (var r in emailValidators) {
+            if (formValidation.validators.remote[r]) {
+                formValidation.validators.remote[r]($(this), emailValidators[r]);
+            }
+        }
+    });
+
+    ajaxResponseHandlers["continueLogin"] = {
+        beforeSend: function (jqXHR, settings) {
+            settings["_form_"].find(":submit").addClass("cn-btn--spinner");
+        },
+
+        success: function (response, xhr) {
+            $(".cn-btn--spinner").removeClass("cn-btn--spinner");
+            if (response.sso_enabled) {
+                window.location.href = response.redirect_url;
+            } else {
+                $("#cb-login-email-continue").hide();
+                var continueEmail = document.getElementById("continue-email");
+                var loginEmail = document.getElementById("email");
+
+                loginEmail.value = continueEmail.value;
+                $("#cb-login-old-flow").show();
+                var inputPassword = document.getElementById("password");
+                inputPassword.focus();
+            }
+        },
+
+        error: function (jqXHR) {
+            $(".cn-btn--spinner").removeClass("cn-btn--spinner");
+            var errorJSON = ajaxResponseHandlers.defhandler.parse(jqXHR.responseText);
+            var errMsg = "";
+            jQuery.each(errorJSON.errors, function (idx, errObj) {
+                if (errObj.param == null) {
+                    errMsg = flashMessage.getAsFlash("error", errObj.message);
+                }
+                if (errorJSON.error_info != undefined && errorJSON.error_info.data == "nopass") {
+                    $("#cb-login-email-continue").hide();
+                    var continueEmail = document.getElementById("continue-email");
+                    var loginEmail = document.getElementById("email");
+                    loginEmail.value = continueEmail.value;
+                    $("#cb-login-old-flow").show();
+                    $("#cb-alert-registration-fields").hide();
+                    $("#cb-alert-registration").show();
+                    $("#users_continue_login").find('input[type="submit"]').attr("disabled", "true");
+                }
+            });
+        }
+    };
+
+    
+
+</script>
+<style >
+    body{
+        min-width: 320px;
+    }
+    @media (min-width: 1024px){
+        body{
+            background-color: #f0f0f5;
+            background-color: var(--bodyfill);
+        }
+    }
+</style>
+
+        
+
+
+
+        
+
+
+        
+
+
+
+    </body>
+</html>
